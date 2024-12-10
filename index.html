@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soporify</title>
+    <script type="module" src="/src/script.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <section class="search-container">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher une musique...">
+        <div id="search-results"></div>
+    </div>
+    </section>
+    <section id="profile">
+      <div class="container">
+        <span id="avatar"></span>
+      </div>
+      <div class="container">
+        <ul>
+          <li>Email: <span id="email"></span></li>
+          <li>Artistes suivis: <span id="artist_count"></span></li>
+          <li>Nombre de playlists: <span id="playlist_count"></span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="artists-container">
+      <div class="container">
+        <h2>Followed Artists</h2>
+      </div>
+      <div class="container">
+        <ul id="artists">
+        </ul>
+      </div>
+    </section>
+    <section class="playlists-container">
+      <div class="container">
+        <h2>My Playlists</h2>
+      </div>
+      <div class="container">
+        <ul id="playlists">
+        </ul>
+      </div>
+    </section>
+    <section class="music-container">
+      <iframe id="music-player" style="border-radius:12px" src="https://open.spotify.com/embed/album/69NQGw0ZEDnhsASkg9MzXr?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>    
+  </body>
+</html>
