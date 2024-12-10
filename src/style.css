@@ -438,3 +438,13 @@ button:focus-visible {
     bottom: 0;
     right: 0;
   }
+
+  .result-play-btn {
+    border: none;
+    background: none;
+    color: white;
+  }
+
+  .result-play-btn:hover {
+    text-decoration: underline;
+  }

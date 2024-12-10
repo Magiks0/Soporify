@@ -168,9 +168,8 @@ async function searchMusic() {
             resultElement.classList.add("search-result");
             resultElement.innerHTML = `
                 ${result.album.images.length > 0 ? '<img src="'+ result.album.images[0].url +'" alt="'+ result.name + '" class="track-img"></img>' : ''}
-                <h3>${result.name}</h3>
+                <button class="result-play-btn" data-uri="${result.uri}">${result.name}</button>
                 <p>${result.artists.map(artist => artist.name).join(', ')}</p>
-                <button class="result-play-btn" data-uri="${result.uri}">Play</button>
             `;
             searchResultsContainer.appendChild(resultElement);
             document.querySelector(`.result-play-btn[data-uri="${result.uri}"]`).addEventListener("click", async () => {
